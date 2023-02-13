@@ -21,6 +21,7 @@ Steghide
 Steghide merupakan tool untuk mencari hidden data pada suatu file, Pada kasus ini kita mendownload foto White Rabbit kemudian kita menggunakan command “steghide extract -sf white_rabbit_1.jpg” dan mengosongkan passphrase, kemudian ditemukan hidden file yaitu hint.txt yang langsung terdownload di kalilinux kita.
 
 ![image](https://user-images.githubusercontent.com/88881191/218485705-382f9e62-9cc3-4507-8d1d-ca056d282444.png)
+
 ![image](https://user-images.githubusercontent.com/88881191/218485746-1b5ef995-3554-46bd-a3c0-a3dfa197a3a5.png)
 
 Kita mencoba command “cat hint.txt” dan ditemukan clue “follow the r a b b i t” namun clue ini masih belum terlalu memberikan bayangan untuk masuk ke next step dari penetration ini, sehingga kita menggunakan dirbuster dan berharap kita mendapatkan informasi tambahan.
@@ -39,6 +40,7 @@ Kita mendapatkan hasil directory /r/a/b/b/i/t yang muncul paling atas. Kita akan
 Dari clue steghide (follow the r a b b i t) dan hasil dirbuster kita mendapatkan clue untuk membuka directory di browser. Kita mencoba membuka directory /r/ terdapat tulisan “Keep Going”, kita terus memasukkan directory sampai menemukan web dari dir /r/a/b/b/i/t yang berisi header “Open the door and enter wonderland.”
 
 ![image](https://user-images.githubusercontent.com/88881191/218485793-6b7acf0a-ad0f-4b9d-8057-ee5a370e5605.png)
+
 ![image](https://user-images.githubusercontent.com/88881191/218485807-d394b0c8-c154-4d2a-bd89-da6f5e399b74.png)
 
 Dari kalimat “Open the door and enter wonderland.” Kita mendapatkan sebuah clue yaitu pada kata “open”, disini kita disuruh untuk membuka sesuatu, sehingga kita mencoba untuk melakukan inspect element pada web ini, dan menemukan sebuah informasi menarik. “alice:HowDothTheLittleCrocodileImproveHisShiningTail”
