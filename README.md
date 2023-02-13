@@ -67,4 +67,6 @@ Biasanya flag root berada pada directory root dengan nama file root.txt (/root/r
 
 ![image](https://user-images.githubusercontent.com/88881191/218487695-fb9c71ef-65bb-4881-815d-738bcdbef1ab.png)
 
+```
 Flag User: thm{“Curiouser and couriouser!”}
+```
